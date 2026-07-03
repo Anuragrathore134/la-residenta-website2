@@ -161,5 +161,49 @@ footer{
 
     nav ul{
         margin-top:10px;
+        /* Floating Buttons */
+
+.call-btn,
+.whatsapp-btn{
+    position:fixed;
+    right:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    z-index:9999;
+    transition:.3s;
+}
+
+.call-btn{
+    bottom:95px;
+    background:#007bff;
+    color:#fff;
+    font-size:28px;
+}
+
+.call-btn:hover{
+    transform:scale(1.1);
+    background:#0056b3;
+}
+
+.whatsapp-btn{
+    bottom:20px;
+    background:#25D366;
+}
+
+.whatsapp-btn img{
+    width:32px;
+    height:32px;
+    filter:invert(1);
+}
+
+.whatsapp-btn:hover{
+    transform:scale(1.1);
+}
     }
 }
